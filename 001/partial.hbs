@@ -1,0 +1,19 @@
+<div id="project-container">
+  <div id="image">
+
+  </div>
+  <div id="description">
+    <h1><a href="{{ permalink }}">{{ title }}</a></h1>
+    <p class="lead">
+      {{ client }}
+    </p>
+    <p>
+      {{ description }}
+    </p>
+    <p class="tags">
+    {{#each tags }}
+      {{ . }}
+    {{/each}}
+    </p>
+  </div>
+</div>

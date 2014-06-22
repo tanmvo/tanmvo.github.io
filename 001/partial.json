@@ -1,0 +1,98 @@
+{
+	"project-1": {
+		"title": "Content & ROI",
+		"image": "",
+		"client": "Yellow Pages",
+		"description": "\nA series of HTML Emails encouraging customers to update their online ads. Content is generated via customer's data profile, resulting in targeted marketing messages. Other features include a responsive layout and a custom 1-step sign-up/sign-in process.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-2": {
+		"title": "Bright Yellow eNewsletter",
+		"image": "",
+		"client": "Yellow Pages",
+		"description": "\nA fortnightly newsletter designed to promote content from the Yellow Pages advertising website. Used as strategic communication to customers (paid and unpaid) to push business services front-of-mind. Designed for recurring use, the challenges faced include keeping the template simple for client use while maintaining features such as a resonsive layout and social media functions.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "Templates", "Photoshop"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-3": {
+		"title": "Whereis Maps Monthly Newsletter",
+		"image": "",
+		"client": "Whereis Maps",
+		"description": "\nPart of their recent changes, we were asked to redesign the Whereis Maps eDM template. Part of the client's objectives is to drive map purchases. Through the new design, we created a map showcase section detailing new improvements and features. When sending communications, the map section takes the prominent position at the top. A responsive layout is used to cater for the growing number of mobile users.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "assemble.io", "node", "grunt", "Photoshop"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-3": {
+		"title": "Whereis Maps Monthly Newsletter",
+		"image": "",
+		"client": "Whereis Maps",
+		"description": "\nPart of their recent changes, we were asked to redesign the Whereis Maps eDM template. Part of the clients objectives is to drive map purchases. Through the new design, we created a map showcase section detailing new improvements and features. When sending communications, the map section takes the prominent position at the top. A responsive layout is used to cater for the growing number of mobile users.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "assemble.io", "node", "grunt", "Photoshop"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-4": {
+		"title": "Assemble Template",
+		"image": "",
+		"client": "Taos Creative",
+		"description": "Managing a library of Static HTML pages can be daunting. The Assemble Template uses Node, Grunt and Assemble.io to generate HTML pages from handlebars templates. The template was implemented into current workflow to speed up amends, reduce errors typically faced when managing multiple HTML files, and separate project components into manageable sections.",
+		"tags": ["HTML", "Javascript", "Assemble.io", "Node", "Grunt", "Templates", "Git"],
+		"permalink": "http://www.github.com/thetanman/assemble-template"
+	},
+	"project-3": {
+		"title": "Whereis Maps Monthly Newsletter",
+		"image": "",
+		"client": "Whereis Maps",
+		"description": "\nPart of their recent changes, we were asked to redesign the Whereis Maps eDM template. Part of the clients objectives is to drive map purchases. Through the new design, we created a map showcase section detailing new improvements and features. When sending communications, the map section takes the prominent position at the top. A responsive layout is used to cater for the growing number of mobile users.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "assemble.io", "node", "grunt", "Photoshop"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-4": {
+		"title": "Assemble Template",
+		"image": "",
+		"client": "Taos Creative",
+		"description": "Managing a library of Static HTML pages can be daunting. The Assemble Template uses Node, Grunt and Assemble.io to generate HTML pages from handlebars templates. The template was implemented into current workflow to speed up amends, reduce errors typically faced when managing multiple HTML files, and separate project components into manageable sections.",
+		"tags": ["HTML", "Javascript", "Assemble.io", "Node", "Grunt", "Templates", "Git"],
+		"permalink": "http://www.github.com/thetanman/assemble-template"
+	},
+	"project-5": {
+		"title": "Choice Hotels Competitions",
+		"image": "",
+		"client": "Choice Hotels Australasia",
+		"description": "",
+		"tags": ["Wordpress", "Competitions", "Microsite", "Facebook"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-3": {
+		"title": "Whereis Maps Monthly Newsletter",
+		"image": "",
+		"client": "Whereis Maps",
+		"description": "\nPart of their recent changes, we were asked to redesign the Whereis Maps eDM template. Part of the clients objectives is to drive map purchases. Through the new design, we created a map showcase section detailing new improvements and features. When sending communications, the map section takes the prominent position at the top. The template is responsive to mirror the same experience when returning to the website.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "assemble.io", "node", "grunt", "Photoshop"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-4": {
+		"title": "Assemble Template",
+		"image": "",
+		"client": "Taos Creative",
+		"description": "Managing a library of Static HTML pages can be daunting. The Assemble Template uses Node, Grunt and Assemble.io to generate HTML pages from handlebars templates. The template was implemented into current workflow to speed up amends, reduce errors typically faced when managing multiple HTML files, and separate project components into manageable sections.",
+		"tags": ["HTML", "Javascript", "Assemble.io", "Node", "Grunt", "Templates", "Git"],
+		"permalink": "http://www.github.com/thetanman/assemble-template"
+	},
+	"project-5": {
+		"title": "Choice Hotels Competitions",
+		"image": "",
+		"client": "Choice Hotels Australasia",
+		"description": "A microsite for yearly promotions and competitions using Wordpress and Vision6 email marketing system. Customers were required to sign in to enter the competition, and given unique codes with purchases for additional entries into the competition. As project manager, I lead a team of developers to  wireframe and build the microsite and transactional email campaign.",
+		"tags": ["Wordpress", "Competitions", "Microsite", "Facebook"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-6": {
+		"title": "Portfolio Page",
+		"image": "",
+		"client": "Tan Vo",
+		"description": "Single page resume built using HTML5 Boilerplate, CSS/Less, JQuery and Node.js. A single HTML page is compiled using handlebars and assemble. Grunt tasks to manage CSS/Less files and serve livereload using grunt-contrib-connect and grunt-contrib-watch. Hosted on Github as a Github personal page.",
+		"tags": ["HTML", "CSS", "Javascript", "Node", "Grunt", "Less", "Responsive Design", "Bootstrap"],
+		"permalink": "http://www.tanmvo.com/"
+	}
+}
