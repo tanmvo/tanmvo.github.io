@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 					livereload: true,
 				},
 			hbs: {
-				files: ['001/*.hbs', 'templates/**/*.hbs'],
+				files: ['001/*.hbs', 'src/templates/**/*.hbs'],
 				tasks: ['assemble'],
 			},
 			less: {
