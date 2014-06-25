@@ -36,13 +36,21 @@ module.exports = function(grunt) {
 			},
 			livereload: true,
 		},
-		copy: {},
+		copy: {
+			images: {
+				expand: true,
+			    cwd: 'src/img/',
+			    src: '**',
+			    dest: 'dist/assets/img/',
+			    flatten: true,
+			}
+		},
 		less: {
 			development: {
 				options: {
 					paths: ["assets/css"]
 				},
-				files: {
+					files: {
 					"assets/css/main.css": "src/less/main.less"
 				},
 			},
