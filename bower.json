@@ -1,0 +1,30 @@
+{
+  "name": "thetanman.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thetanman/thetanman.github.io",
+  "authors": [
+    "Tan Vo <tan.m.vo@gmail.com>"
+  ],
+  "description": "Tan Vo Resume and Portfolio",
+  "main": "index.html",
+  "keywords": [
+    "tan",
+    "vo",
+    "bootstrap",
+    "less",
+    "portfolio",
+    "css",
+    "handlebars"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
