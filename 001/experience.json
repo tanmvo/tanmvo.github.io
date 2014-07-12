@@ -1,0 +1,26 @@
+{
+  "experience-1": {
+    "title": "Digital Project Manager",
+    "company": "Taos Creative",
+    "period": " September 2011 - Present",
+    "description": "As digital project manager I provide website, social and email marketing solutions for media companies, fashion brands and local start-ups. I produce website wireframes using HTML5 and CSS3, develop email-client friendly and responsive eDMs, design social media pages and optimise work processes using Node.js and Grunt. Current clientele include Yellow Pages, White Pages, Whereis Maps, Choice Hotels Australasia, Hip Pocket, Brasilfit and Charleston's Fine Auctions."
+  },
+  "experience-2": {
+    "title": "Email marketing Consultant",
+    "company": "Taos Creative",
+    "period": "October 2010 - September 2011",
+    "description": "Responsibilities include developing and implementing production quality email campaigns for corporate and fashion brands. I collaborate with external agencies and in house design team to develop responsive email messages, rigorously test using Litmus, and schedule according to a strict marketing calendar."
+  },
+  "experience-3": {
+    "title": "SEO/SEM/SMO Consultant",
+    "company": "Taos Creative",
+    "period": "February 2009 - October 2010",
+    "description": "Monitor overall search performance for SEM and SEO campaigns. Implement search strategies and track the effectiveness of new and existing campaigns. Introduced social packages which include Facebook advertising bundles, Facebook page customisation and tab development."
+  },
+  "experience-4": {
+    "title": "Sales Consultant",
+    "company": "Allphones",
+    "period": "February 2006 - January 2008",
+    "description": "Tailor telecommunication solutions to customer needs. Consistently achieve sales targets and KPIs through exceptional customer service."
+  }
+}

@@ -6,11 +6,28 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: @font-family-title;
+	line-height: (@headings-line-height * 1.2);
+}
+
+a {
+	color: @link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: @link-hover-color;
+		text-decoration: none;
+	}
+
+	&:focus {
+		.tab-focus();
+	}
 }
 
 // Custom Bootstrap Styles
 
 .lead  {
+	color: @gray-light;
 	font-family: @font-family-subtitle;
 	font-weight: 300;
 }
@@ -20,15 +37,29 @@ h1, h2, h3, h4, h5, h6 {
   &:extend(.clearfix all);
 }
 
+.project {
+	@media (max-width: @screen-xs-max) {
+		margin-bottom: 0px;
+	}
+}
+
+.project-title h4:before {
+	content: " ";
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	line-height: 1px;
+	border-top: 1px solid @gray-66;
+	top: -1px;
+	right: 0;
+	z-index: 1;
+}
+
 .small {
-	color: @gray-light;
+	color: @gray-66;
 }
 
 // Custom Objects
-
-.o-obj-description p {
-	margin-top: @line-height-computed;
-}
 
 .o-img-container {
 	@media (max-width: @screen-xs-max) {
@@ -37,9 +68,16 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.o-tag {
+	background-color: @gray-ef;
+	color: @gray-66;
+	display: inline-block;
+	margin-bottom: (@line-height-computed / 5);
+	padding: 2px 4px;
+}
+
 .o-color-block {
 	height: (@line-height-computed * 4.5);
-	
 }
 
 .primary {
