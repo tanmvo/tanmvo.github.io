@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 	      		}
 	      	},
 		},
-		clean: ['./index.html'],
+		clean: ['./index.html', 'assets/js/'],
 		connect: {
 			options: {
 				port: 8000,
@@ -37,12 +37,12 @@ module.exports = function(grunt) {
 			livereload: true,
 		},
 		copy: {
-			images: {
+			js: {
 				expand: true,
-			    cwd: 'src/img/',
-			    src: '**',
-			    dest: 'dist/assets/img/',
-			    flatten: true,
+					cwd: 'src/js/',
+					src: '*.js',
+					dest: 'assets/js/',
+					flatten: true,
 			}
 		},
 		less: {
@@ -67,6 +67,10 @@ module.exports = function(grunt) {
 			less: {
 				files: ['src/less/*.less'],
 				tasks: ['less']
+			},
+			js: {
+				files: ['src/js/*.js'],
+				tasks: ['copy:js']
 			}
 		},
 	});
@@ -79,6 +83,6 @@ module.exports = function(grunt) {
 		grunt.loadNpmTasks('grunt-text-replace');
   	grunt.loadNpmTasks('grunt-contrib-watch');
   	// Default task to be run.
-  	grunt.registerTask('default', ['clean', 'less', 'assemble']);
-  	grunt.registerTask('serve', ['clean', 'less', 'assemble', 'connect', 'watch']);
+  	grunt.registerTask('default', ['clean', 'less', 'copy', 'assemble']);
+  	grunt.registerTask('serve', ['clean', 'less', 'copy', 'assemble', 'connect', 'watch']);
 };

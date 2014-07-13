@@ -11,7 +11,7 @@
 		"title": "Bright Yellow eNewsletter",
 		"image": "http://placehold.it/1024x728",
 		"client": "Yellow Pages",
-		"description": "\nA fortnightly newsletter designed to promote content from the Yellow Pages advertising website. Used as strategic communication to customers (paid and unpaid) to push business services front-of-mind. Designed for recurring use, the challenges faced include keeping the template simple for client use while maintaining features such as a resonsive layout and social media functions.",
+		"description": "\nA fortnightly newsletter designed to promote content from the Yellow Pages advertising website. Used as strategic communication to customers (paid and unpaid) to push business services front-of-mind. Designed as a template, challenges I successfully overcame include keeping the template simple for client editing while maintaining features such as a responsive layout and social media functions.",
 		"tags": ["HTML Email", "Email Marketing", "Responsive Design", "Templates", "Photoshop"],
 		"permalink": "http://www.tanmvo.com/"
 	},
@@ -46,5 +46,45 @@
 		"description": "Single page resume built using HTML5 Boilerplate, CSS/Less, JQuery and Node.js. A single HTML page is compiled using handlebars and assemble. Grunt tasks to manage CSS/Less files and serve livereload using grunt-contrib-connect and grunt-contrib-watch. Hosted on Github as a Github personal page.",
 		"tags": ["HTML", "CSS", "Javascript", "Node", "Grunt", "Less", "Responsive Design", "Bootstrap"],
 		"permalink": "http://www.tanmvo.com/"
-	}
+	},
+	"project-7": {
+		"title": "Banner Display Advertising",
+		"image": "http://placehold.it/1024x728",
+		"client": "TAB Sportsbet",
+		"description": "Animated display ads to increase awareness of special promotions and events for national brand, TAB Sportsbet. Used Flash CS5 to produce animations from existing artwork for distribution. Adhere to strict job specifications such as file size, click tracking and EyeBlaster configuration.",
+		"tags": ["Flash", "Animation", "Actionscript", "HTML"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-8": {
+		"title": "Sign Up Wizard",
+		"image": "http://placehold.it/1024x728",
+		"client": "JCurve",
+		"description": "JCurve aims to cater small businesses with simple accounting software. The sign up wizard for free software trials was redesigned to improve customer conversions and user experience. I assisted the technical director by developing page structures, modal boxes and tool tips using HTML, CSS and JQuery. The addition of the elements were utilised to assist customers during the sign up process.",
+		"tags": ["HTML", "CSS", "JQuery", "Bootstrap", "UI/UX"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-9": {
+		"title": "Back in 15 Webcast",
+		"image": "http://placehold.it/1024x728",
+		"client": "Yellow Pages",
+		"description": "\"Back in 15\" is an online webcast educating customers on Digital Marketing, utilised as an opportunity promote the brand's products and services. I designed and developed a series of email templates to promote and remind Yellow Pages customers to tune into the webcast. The series introduces the month's digital marketing topic, followed by a reminder to register, then a final call to action to view the webcast online.",
+		"tags": ["HTML Email", "Email Marketing", "Responsive Design"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-10": {
+		"title": "Charleston's Promotions",
+		"image": "http://placehold.it/1024x728",
+		"client": "Charleston's Fine Art Auctions",
+		"description": "Charleston's offer a $200 voucher to customers who sign up to their loyalty program. I developed a form which integrates into vision6, an email marketing platform. The form collects the customer's details into a database and then returns an HTML Email with the voucher. The form has had over 200 registrants since it's implementaion in June 2014.",
+		"tags": ["HTML", "CSS", "Responsive Design", "Forms"],
+		"permalink": "http://www.tanmvo.com/"
+	},
+	"project-11": {
+		"title": "Brasilfit Expo Sign Up",
+		"image": "http://placehold.it/1024x728",
+		"client": "Brasilfit",
+		"description": "Brasilfit is an national women's sportwear label often seen at fitness events and expos. As a means of driving sales and increasing brand awareness, a $5 voucher is offered to expo attendees if they sign up to the loyalty program. I developed a form which collects the customer's information and stores it in a cloud hosted database. A triggered email containing the voucher is then sent to the customer's inbox. The form features a responsive design to combat the limited internet and hardware access whilst travelling.",
+		"tags": ["HTML", "CSS", "Responsive Design", "Bootstrap", "Forms"],
+		"permalink": "http://www.tanmvo.com/"
+	},
 }

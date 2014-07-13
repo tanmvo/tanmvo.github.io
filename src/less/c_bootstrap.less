@@ -94,4 +94,26 @@ a {
 
 // Custom Modules
 
+.m-company-profile {
+	text-align: right;
+	@media (max-width: @screen-xs-max) {
+		text-align: left;
+	}
+}
+
+.m-company-profile h4:before {
+	content: " ";
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	line-height: 1px;
+	border-top: 1px solid @gray-66;
+	top: -1px;
+	right: 0;
+	z-index: 1;
+	@media (max-width: @screen-xs-max) {
+		left: 0;
+	}
+}
+
 // Custom Layouts
