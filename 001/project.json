@@ -86,5 +86,5 @@
 		"description": "Brasilfit is an national women's sportwear label often seen at fitness events and expos. As a means of driving sales and increasing brand awareness, a $5 voucher is offered to expo attendees if they sign up to the loyalty program. I developed a form which collects the customer's information and stores it in a cloud hosted database. A triggered email containing the voucher is then sent to the customer's inbox. The form features a responsive design to combat the limited internet and hardware access whilst travelling.",
 		"tags": ["HTML", "CSS", "Responsive Design", "Bootstrap", "Forms"],
 		"permalink": "http://www.tanmvo.com/"
-	},
+	}
 }
