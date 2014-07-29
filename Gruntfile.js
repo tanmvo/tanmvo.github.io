@@ -43,6 +43,13 @@ module.exports = function(grunt) {
 					src: '*.js',
 					dest: 'assets/js/',
 					flatten: true,
+			},
+			bsjs: {
+				expand: true,
+					cwd: './bower_components/bootstrap/dist/js/',
+					src: 'bootstrap.min.js',
+					dest: 'assets/js/',
+					flatten: true,
 			}
 		},
 		less: {

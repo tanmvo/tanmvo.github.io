@@ -33,27 +33,72 @@ a {
 }
 
 .make-row(@gutter: @grid-gutter-width) {
-  margin-bottom: (@gutter / 3);
+	margin-left: 0px;
+	margin-right: 0px;
   &:extend(.clearfix all);
 }
 
+
+
 .project {
-	@media (max-width: @screen-xs-max) {
-		margin-bottom: 0px;
+	padding: 0px;
+	margin: 0px;
+	@media (max-width: @screen-md-min) {
+		margin: 0px;
+	}
+	@media (max-width: @screen-sm-min) {
+		margin: 0px;
+	}
+	@media (max-width: @screen-lg-min) {
+		margin: 0px;
 	}
 }
 
-.project-title h4:before {
+/* .project img {
+	border: solid 1px #fedc00;
+} */
+
+.project h4 {
+	color: #FFF;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 60%;
+}
+
+
+.project h4 span {
+	color: @gray-96;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+}
+
+.project-container {
+	.container-fixed();
+	padding-left: 0px;
+	padding-right: 0px;
+	@media (min-width: @screen-sm-min) {
+		width: 100%;
+	}
+	@media (min-width: @screen-md-min) {
+		width: @container-md;
+	}
+	@media (min-width: @screen-lg-min) {
+		width: @container-lg;
+	}
+}
+
+.o-nav-item:before {
 	content: " ";
 	position: absolute;
-	width: 50%;
+	width: 80%;
 	height: 1px;
 	line-height: 1px;
-	border-top: 1px solid @gray-66;
+	border-top: 4px solid @gray-66;
 	top: -1px;
-	right: 0;
+	left: 0;
 	z-index: 1;
-}
+} 
 
 .small {
 	color: @gray-66;
@@ -115,5 +160,38 @@ a {
 		left: 0;
 	}
 }
+
+.m-profile {
+	float: none;
+	display: block;
+	padding-left: -15px;
+	padding-right: -15px;
+}
+
+.o-card {
+	border-radius: 3px;
+	background-color: #ffffff;
+}
+
+.m-skills ul {
+	margin-left: -45px;
+	list-style: none;
+}
+
+.m-career {
+	background-color: #414f5f;
+}
+
+.m-experience {
+	background-color: #414f5f;
+}
+
+//
+// Panels
+// --------------------------------------------------
+
+
+// Base class
+
 
 // Custom Layouts
