@@ -1,0 +1,108 @@
+# =============================================
+# Build config
+# =============================================
+
+root:             ./
+dest:             <%= site.root %>
+assets:           <%= site.dest %>/assets
+
+# Data
+data:             src/templates/_data
+
+# Templates
+templates:        src/templates
+includes:         <%= site.templates %>/_includes/*.hbs
+layouts:          <%= site.templates %>/_layouts
+layout:           default.hbs
+pages:            <%= site.templates %>/*.hbs
+projects:         <%= site.templates %>/_projects/*.md
+
+# Extensions
+helpers:          <%= site.templates %>/_helpers/*.js
+plugins:
+  # - assemble-contrib-anchors
+  # - assemble-contrib-wordcount
+  # - assemble-contrib-toc
+
+# Theme
+theme:            # theme
+
+
+# =============================================
+# Project metadata
+# =============================================
+
+author:           <% pkg.author %>
+
+# Assemble metadata.
+assemble:
+  latest:         <%= pkg.version %>
+
+# GitHub
+username:         thetanman
+name:             <%= pkg.name %>
+download:
+  source:         <%= pkg.homepage %>/archive/master.zip
+
+
+# =============================================
+# Site metadata
+# =============================================
+
+brand:            Tan M Vo
+title:            Portfolio
+lead:             UX Designer and Front End Developer from Sydney, Australia.
+keywords:         <%= pkg.keywords %>
+
+version:          <%= pkg.version %>
+description:      <%= pkg.description %>
+license:
+  type:           <%= pkg.licenses[0].type %>
+  url:            <%= pkg.licenses[0].url %>
+
+
+
+# SEO/SEM
+ga:
+  id:             # UA-00000000-0
+  domain:         false
+  siteid:         false
+  tags:           false
+
+
+# Links
+url:
+  repo:           <%= pkg.repository.url %>
+  bugs:           <%= pkg.bugs.url %>?state=open
+  ghpages:        https://<%= site.username %>.github.io/<%= pkg.name %>/
+
+  # Site
+  domain:         <%= pkg.homepage %>
+  about:          <%= site.url.domain %>/about/
+  blog:           <%= site.url.domain %>/blog/
+
+
+# Comments
+disqus:
+  enabled:        false
+  # shortname:      <%= pkg.name %>
+
+# Social
+social:
+  twitter:
+    via:          tvnmvn
+    username:     tvnmvn
+    related:      tvnmvn
+  facebook:       false
+  linkedin:       false
+  gplus:          false
+  hn:             false
+  google:         false
+
+# Sharing
+sharing:
+  twitter:        false
+  facebook:       false
+  gplus:          false
+  hn:             false
+  google:         false
