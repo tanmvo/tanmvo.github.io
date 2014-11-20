@@ -1,0 +1,26 @@
+{
+  "name": "tanmvo",
+  "version": "0.0.0",
+  "homepage": "http://tanmvo.com",
+  "authors": [
+    "Tan Vo <tan.m.vo@gmail.com>"
+  ],
+  "description": "Tan M Vo Portfolio built in Assemble",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bootstrap",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
