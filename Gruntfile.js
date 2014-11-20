@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 		browserSync: {
 			
 			bsFiles: {
-		        src : ['<%= site.pages %>', '<%= site.dest %>/projects/*.html']
+		        src : ['<%= site.pages %>', '<%= site.dest %>/projects/*.html', '<%= site.assets %>/css/*.css']
 		    },
 		    
 		    options: {
@@ -61,17 +61,34 @@ module.exports = function(grunt) {
 		},
 
 		clean: {
-			server: ['<%= assemble.projects.dest %>']
+			server: ['<%= assemble.projects.dest %>', '<%= site.assets %>', '!<%= site.assets %>' ]
+		},
+
+		less: {
+			server: {
+				options: {
+					paths: ["assets/css"]
+				},
+					files: {
+					"assets/css/main.css": "src/less/main.less"
+				},
+			},
 		},
 
 		watch: {
 			options: {
 				livereload: true,
 			},
+			
 			assemble: {
 				files: ['<%= site.pages %>', '<%= site.projects %>'],
 				tasks: ['assemble']
 			},
+
+			less: {
+				files: ['src/less/**/*.less'],
+				tasks: ['less']
+			}  
 		}
 	
 	});
@@ -79,9 +96,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('assemble');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['clean', 'assemble', 'browserSync', 'watch']);
+	grunt.registerTask('default', ['clean', 'less', 'assemble', 'browserSync', 'watch']);
 
 }
 
