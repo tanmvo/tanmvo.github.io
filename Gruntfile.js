@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 			},
 			
 			assemble: {
-				files: ['<%= site.pages %>', '<%= site.projects %>'],
+				files: ['<%= site.pages %>', '<%= site.data %>/*.json', '<%= site.includes %>', '<%= site.projects %>' ],
 				tasks: ['assemble']
 			},
 
