@@ -3836,7 +3836,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after {
+.navbar-collapse:after,
+.header:before,
+.header:after {
   content: " ";
   display: table;
 }
@@ -3850,7 +3852,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after {
+.navbar-collapse:after,
+.header:after {
   clear: both;
 }
 .center-block {
@@ -4095,5 +4098,150 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .header {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    width: 1170px;
+  }
+}
+.header > .navbar-header,
+.header > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .header > .navbar-header,
+  .header > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.header .logo {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+.header .profile {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .header .profile {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .header .profile {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .header .profile {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .header .profile {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .header .profile {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .header .profile {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.header .description {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .header .description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .header .description {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .header .description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .header .description {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .header .description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .header .description {
+    float: left;
+    width: 58.33333333%;
   }
 }
