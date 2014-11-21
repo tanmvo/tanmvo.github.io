@@ -43,26 +43,47 @@ module.exports = function(grunt) {
 
 		},
 
-		browserSync: {
+		// browserSync: {
 			
-			bsFiles: {
-		        src : ['<%= site.pages %>', '<%= site.dest %>/projects/*.html', '<%= site.assets %>/css/*.css']
-		    },
+		// 	bsFiles: {
+		//         src : ['<%= site.pages %>', '<%= site.dest %>/projects/*.html', '<%= site.assets %>/css/*.css']
+		//     },
 		    
-		    options: {
-		        server: {
-		            baseDir: "<%= site.dest %>",
-		            tunnel: false,
-		            injectChanges: true,
-		        },
-		        watchTask: true,
-		    }
+		//     options: {
+		//         server: {
+		//             baseDir: "<%= site.dest %>",
+		//             tunnel: false,
+		//             injectChanges: true,
+		//         },
+		//         watchTask: true,
+		//     }
 
-		},
+		// },
 
 		clean: {
 			server: ['<%= assemble.projects.dest %>', '<%= site.assets %>', '!<%= site.assets %>' ]
 		},
+
+		concurrent: {
+			server: ['less', 'assemble:site', 'assemble:projects'],
+		},
+
+		connect: {
+	      options: {
+	        port: 9000,
+	        livereload: 35729,
+	        // change this to '0.0.0.0' to access the server from outside
+	        hostname: 'localhost'
+	      },
+	      livereload: {
+	        options: {
+	          open: true,
+	          base: [
+	            '<%= site.dest %>'
+	          ]
+	        }
+	      }
+	    },
 
 		less: {
 			server: {
@@ -87,19 +108,40 @@ module.exports = function(grunt) {
 
 			less: {
 				files: ['src/less/**/*.less'],
-				tasks: ['less']
-			}  
+				tasks: ['less'],
+				options: {
+					livereload: false,
+				}
+			},
+
+			// css: {
+			// 	files: ['<%= site.assets %>/css/*.css'],
+			// },
+
+			livereload: {
+		        options: {
+		          livereload: '<%= connect.options.livereload %>'
+		        },
+		        files: [
+		          '<%= site.dest %>/*.html',
+		          '<%= site.projects %>/*.html',
+		          '<%= site.assets %>/css/*.css',
+		          '<%= site.assets %>/img/*.{gif,jpg,jpeg,png,svg,webp}'
+		        ]
+		    }
 		}
 	
 	});
 	
 	grunt.loadNpmTasks('assemble');
-	grunt.loadNpmTasks('grunt-browser-sync');
+	// grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['clean', 'less', 'assemble', 'browserSync', 'watch']);
+	grunt.registerTask('default', ['clean', 'concurrent:server', 'connect', 'watch']);
 
 }
 
