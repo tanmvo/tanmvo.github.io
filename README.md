@@ -6,6 +6,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sequi repelle
 
 ## Skills
 
+UX
+
+* User research
+* User flows
+* Wireframing
+* Prototyping
+
 Languages
 
 * HTML5

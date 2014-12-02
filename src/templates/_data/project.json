@@ -1,44 +1,30 @@
 {
 	"project-1": {
 		"title": "Together",
-		"image": "http://placehold.it/1024x728",
+		"image": "assets/img/together/hero.png",
 		"client": "General Assembly",
 		"tags": ["ux", "general assembly", "ios", "mobile application", "invision app"],
 		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
 	},
 	"project-2": {
-		"title": "Sensis Email Preference Manager",
-		"image": "http://placehold.it/1024x728",
+		"title": "Preference Manager",
+		"image": "assets/img/preferencemanager/hero.png",
 		"client": "Sensis",
 		"tags": ["ux", "ui", "html", "css", "jquery", "axure"],
 		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
 	},
 	"project-3": {
-		"title": "JCurve POS System",
-		"image": "http://placehold.it/1024x728",
-		"client": "JCurve",
-		"tags": ["ux", "ui", "axure", "wireframes"],
-		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
-	},
-	"project-4": {
 		"title": "Choice Hotels Competitions",
-		"image": "http://placehold.it/1024x728",
+		"image": "assets/img/choicehotelscompetitions/hero.png",
 		"client": "Choice Hotels",
 		"tags": ["ux", "ui", "wireframes", "html", "css"],
 		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
 	},
-	"project-5": {
-		"title": "Whereis Maps eNewsletter",
-		"image": "http://placehold.it/1024x728",
-		"client": "Whereis Maps",
-		"tags": ["html email", "html", "css", "ui"],
-		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
-	},
-	"project-6": {
-		"title": "Content & ROI",
-		"image": "http://placehold.it/1024x728",
-		"client": "Sensis",
-		"tags": ["html email", "photoshop", "html", "css", "ui"],
+	"project-4": {
+		"title": "JCurve POS System",
+		"image": "assets/img/jcurvepos/hero.png",
+		"client": "JCurve",
+		"tags": ["ux", "ui", "axure", "wireframes"],
 		"permalink": "http://www.tanmvo.com/projects/together-general-assembly.html"
 	}
 }
