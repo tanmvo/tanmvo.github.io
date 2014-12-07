@@ -96,6 +96,25 @@ module.exports = function(grunt) {
 			},
 		},
 
+		replace: {
+			// dist: {
+			// 	options: {
+			// 		patterns: [
+			// 			{
+			// 				match: "href=\"/\"",
+			// 				replacement: "href=\"http://www.tanmvo.com\""
+			// 			}
+			// 		]
+			// 	},
+			// 	files: {
+			// 		expand: true,
+			// 		flatten: true,
+			// 		src: ['<%= site.dest %>/index.html'],
+			// 		dest: '<%= site.dest %>'
+			// 	}
+			// }
+		},
+
 		watch: {
 			options: {
 				livereload: true,
@@ -139,9 +158,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-replace');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['clean', 'concurrent:server', 'connect', 'watch']);
-
+	grunt.registerTask('dist', ['clean', 'assemble', 'replace:dist']);
 }
 

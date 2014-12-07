@@ -15,7 +15,7 @@ includes:         <%= site.templates %>/_includes/*.hbs
 layouts:          <%= site.templates %>/_layouts
 layout:           default.hbs
 pages:            <%= site.templates %>/*.hbs
-projects:         <%= site.templates %>/_projects/*.md
+projects:         <%= site.templates %>/_projects/*.hbs
 
 # Extensions
 helpers:          <%= site.templates %>/_helpers/*.js
