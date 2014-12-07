@@ -4389,14 +4389,14 @@ footer:after {
   font-size: 18px;
   font-weight: normal;
 }
-.project-container .project span {
+.project-container .project h2 a {
   color: white;
 }
-.project-container .project a {
-  color: white;
-}
-.project-container .project:hover {
+.project-container .project h2:hover {
   text-decoration: none;
+  color: white;
+}
+.project-container .project span {
   color: white;
 }
 .project-post {
