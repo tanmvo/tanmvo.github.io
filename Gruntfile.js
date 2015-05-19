@@ -85,6 +85,16 @@ module.exports = function(grunt) {
 	      }
 	    },
 
+	    copy: {
+	    	main: {
+	    		expand: true,
+	    		cwd: './bower_components/bootstrap/dist/js/',
+	    		src: '**',
+	    		dest: '<%= site.assets %>/js/',
+	    		flatten: true
+	    	}
+	    },
+
 		less: {
 			server: {
 				options: {
@@ -157,11 +167,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-replace');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['clean', 'concurrent:server', 'connect', 'watch']);
+	grunt.registerTask('default', ['clean', 'copy', 'concurrent:server', 'connect', 'watch']);
 	grunt.registerTask('dist', ['clean', 'assemble', 'replace:dist']);
 }
 
