@@ -17,6 +17,9 @@ layout:           default.hbs
 pages:            <%= site.templates %>/*.hbs
 projects:         <%= site.templates %>/_projects/*.hbs
 
+# Styles
+styles:           src/sass/**/*
+
 # Extensions
 helpers:          <%= site.templates %>/_helpers/*.js
 plugins:

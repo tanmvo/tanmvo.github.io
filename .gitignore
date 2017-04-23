@@ -29,3 +29,5 @@ bower_components
 # Banish .DS_Store
 
 .DS_Store
+.sass-cache
+./src/sass/.sass-cache

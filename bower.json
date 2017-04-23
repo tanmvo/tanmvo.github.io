@@ -5,7 +5,7 @@
   "authors": [
     "Tan Vo <tan.m.vo@gmail.com>"
   ],
-  "description": "Tan M Vo Portfolio built in Assemble",
+  "description": "Tan M Vo",
   "main": "index.html",
   "moduleType": [
     "node"

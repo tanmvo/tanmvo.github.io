@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 		},
 
 		concurrent: {
-			server: ['less', 'assemble:site', 'assemble:projects'],
+			server: ['sass', 'assemble:site', 'assemble:projects'],
 		},
 
 		connect: {
@@ -95,16 +95,16 @@ module.exports = function(grunt) {
 	    	}
 	    },
 
-		less: {
-			server: {
-				options: {
-					paths: ["assets/css"]
-				},
-					files: {
-					"assets/css/main.css": "src/less/main.less"
-				},
-			},
-		},
+	    sass: {
+	    	dist: {
+	    		options: {
+	    			style: 'expanded'
+	    		},
+	    		files: {
+	    			'./assets/css/main.css': './src/sass/main.scss'
+	    		}
+	    	}
+	    },
 
 		replace: {
 			// dist: {
@@ -135,17 +135,14 @@ module.exports = function(grunt) {
 				tasks: ['assemble']
 			},
 
-			less: {
-				files: ['src/less/**/*.less'],
-				tasks: ['less'],
-				options: {
-					livereload: false,
-				}
-			},
-
 			// css: {
 			// 	files: ['<%= site.assets %>/css/*.css'],
 			// },
+
+			sass: {
+				files: ['<%= site.styles %>'],
+				tasks: ['sass']
+			},
 
 			livereload: {
 		        options: {
@@ -168,11 +165,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-replace');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['clean', 'copy', 'concurrent:server', 'connect', 'watch']);
-	grunt.registerTask('dist', ['clean', 'assemble', 'replace:dist']);
+	grunt.registerTask('dist', ['clean', 'assemble', 'sass', 'replace:dist']);
 }
 
