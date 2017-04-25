@@ -3,29 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ title }} - Tan Vo, UX Designer from Sydney, Australia</title>
+        <title>{{ title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> --}}
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         
-              <link rel="stylesheet" href="../assets/css/main.css"> 
-        {{!--       <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        --}}
-        
+        <link rel="stylesheet" href="assets/css/main.css"> 
     </head>
     <body>
         
-        {{> navigation-project }} 
-        {{> body }}
-        {{> footer }}
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <!-- <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        {{> header }}
 
+        <main>
+            {{#markdown}}  
+                {{> body }}
+            {{/markdown}}
+        </main>
+
+        {{> footer }}
+        
+        <!-- 
          Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

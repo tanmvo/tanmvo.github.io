@@ -15,7 +15,7 @@ includes:         <%= site.templates %>/_includes/*.hbs
 layouts:          <%= site.templates %>/_layouts
 layout:           default.hbs
 pages:            <%= site.templates %>/*.hbs
-projects:         <%= site.templates %>/_projects/*.hbs
+posts:         <%= site.templates %>/_posts/*.hbs
 
 # Styles
 styles:           src/sass/**/*

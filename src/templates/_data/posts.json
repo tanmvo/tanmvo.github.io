@@ -4,27 +4,31 @@
 		"image": "assets/img/together/hero.png",
 		"client": "General Assembly",
 		"tags": ["ux", "general assembly", "ios", "mobile application", "invision app"],
-		"permalink": "http://www.tanmvo.com/projects/together.html"
+		"category": "ux",
+		"link": "/projects/together.html"
 	},
 	"project-2": {
 		"title": "Preference Manager",
 		"image": "assets/img/preferencemanager/hero.png",
 		"client": "Sensis",
 		"tags": ["ux", "ui", "html", "css", "jquery", "axure"],
-		"permalink": "http://www.tanmvo.com/projects/preference-manager.html"
+		"category": "design",
+		"link": "/projects/preference-manager.html"
 	},
 	"project-3": {
 		"title": "Choice Hotels Competitions",
 		"image": "assets/img/choicehotelscompetitions/hero.png",
 		"client": "Choice Hotels",
 		"tags": ["ux", "ui", "wireframes", "html", "css"],
-		"permalink": "http://www.tanmvo.com/projects/choice-hotels-competitions.html"
+		"category": "design",
+		"link": "/projects/choice-hotels-competitions.html"
 	},
 	"project-4": {
 		"title": "JCurve Point of Sale",
 		"image": "assets/img/jcurvepos/hero.png",
 		"client": "JCurve",
 		"tags": ["ux", "ui", "axure", "wireframes"],
-		"permalink": "http://www.tanmvo.com/projects/jcurve-point-of-sale-system.html"
+		"category": "design",
+		"link": "/projects/jcurve-point-of-sale-system.html"
 	}
 }

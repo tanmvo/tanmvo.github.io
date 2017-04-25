@@ -1,8 +1,16 @@
 ---
 title: "Tan Vo - UX Designer from Sydney, Australia"
 ---
-<div class="project-container">
-	{{#each project }}
-		{{> item-project }}
-	{{/each}}
-</div>
+
+This is a blog about me
+
+{{#each posts}}
+  <a href="{{link}}">{{title}}</a>
+{{/each}}
+
+User Experience
+{{#each posts}}
+  {{#is category "ux"}}
+    {{title}}
+  {{/is}}
+{{/each}}
