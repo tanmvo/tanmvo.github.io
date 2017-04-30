@@ -1,0 +1,31 @@
+header {
+	@include grid-container;
+
+	.logo {
+		@include grid-column(2);
+		margin-left: 0;
+		
+		img {
+			width: auto;
+			height: 3em;
+		}
+	}
+	
+	.global-navigation {
+		@include grid-column(10, $tv-grid);
+		text-align: right;
+		font-family: $heading-font-family;
+		color: $blue;
+	
+		ul {
+			margin-top: $small-spacing;
+
+			li {
+				display: inline-block;
+				margin-left: $base-spacing;
+
+				&:first-child { margin-left: 0; }
+			}
+		}
+	}
+}	

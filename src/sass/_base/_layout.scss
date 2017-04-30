@@ -12,3 +12,21 @@ html,
 body {
   height: 100%;
 }
+
+header {
+	margin: $large-spacing auto 0;
+	padding: 0 $base-spacing;
+	max-width: 33em;
+}
+
+main {
+	margin: $large-spacing auto 0;
+	padding: 0 $base-spacing;
+	max-width: 33em;
+}
+
+footer {
+	margin: $large-spacing auto 0;
+	padding: 0 $base-spacing;
+	max-width: 33em;
+}
