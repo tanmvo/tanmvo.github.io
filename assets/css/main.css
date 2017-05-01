@@ -263,6 +263,7 @@ header .global-navigation {
   width: calc(83.33333% - 2.75em);
   float: left;
   margin-left: 1.5em;
+  float: right;
   text-align: right;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #131545;

@@ -13,6 +13,7 @@ header {
 	
 	.global-navigation {
 		@include grid-column(10, $tv-grid);
+		float: right;
 		text-align: right;
 		font-family: $heading-font-family;
 		color: $blue;
